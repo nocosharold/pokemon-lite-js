@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="icon"
+      href="./assets/images/pokemonlite.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link rel="stylesheet" href="assets/styles/ripple.min.css" />
+    <title>Pokemon Lite</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="./assets/images/pokemonlite.png"
+            class="img-fluid"
+            width="100px"
+            alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Pokedex <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catch-pokemon.html">Catch Pokemon</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="wild-pokemon-section mt-5">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col col-lg-12 col-md-12 col-12 text-center mb-4">
+            <h3 class="wild-pokemon-name text-white"></h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="textbox-message text-white">
+            <h5 class="throw">You threw a pokeball!</h5>
+            <h5 class="gotcha">Gotcha!</h5>
+            <h5 class="success"></h5>
+          </div>
+        </div>
+
+        <div
+          class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 d-flex justify-content-center random-pokemon"
+        ></div>
+
+        <div class="row">
+          <div class="col col-lg-12 col-md-12 d-flex justify-content-center">
+            <img
+              src="./assets/images/pokeball-open.png"
+              class="pokeball animate__animated hideInit"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-12 col-lg-6 col-md-6 mb-2">
+            <button
+              type="button"
+              class="btn btn-throw-pokeball btn-danger btn-lg btn-block ripple"
+            >
+              Throw Pokeball
+            </button>
+          </div>
+          <div class="col col-12 col-lg-6 col-md-6">
+            <button
+              type="button"
+              class="btn btn-warning btn-lg btn-block another-pokemon ripple"
+            >
+              Catch Another Pokemon
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <h1>Ivan</h1> -->
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-12">
+            <!-- <p>
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English. Many desktop
+              publishing packages and web page editors now use Lorem Ipsum as
+              their default model text, and a search for 'lorem ipsum' will
+              uncover many web sites still in their infancy. Various versions
+              have evolved over the years, sometimes by accident, sometimes on
+              purpose (injected humour and the like).
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/lodash@4/lodash.min.js"></script>
+    <script src="https://unpkg.com/lowdb@0.17/dist/low.min.js"></script>
+    <script src="https://unpkg.com/lowdb@0.17/dist/LocalStorage.min.js"></script>
+    <script></script>
+
+    <script src="./assets/scripts/catch-pokemon.js"></script>
+  </body>
+</html>
